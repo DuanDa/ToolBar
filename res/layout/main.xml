@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/my_awesome_toolbar"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:minHeight="?attr/actionBarSize"
+		android:background="?attr/colorPrimary" />
+
+	<android.support.v4.widget.DrawerLayout
+		android:id="@+id/dl_home_page"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<FrameLayout
+			android:id="@+id/fl_home_page_container"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		</FrameLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_drawer"
+			android:orientation="vertical"
+			android:layout_gravity="start"
+			android:background="#F21C0A"
+			android:layout_width="280dp"
+			android:layout_height="match_parent">
+
+			<ListView
+				android:id="@+id/lv_home_page_drawer"
+				android:divider="@android:color/black"
+				android:dividerHeight="1px"
+				android:layout_weight="1"
+				android:layout_marginLeft="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+
+		</LinearLayout>
+	</android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ToolBar</string>
+
+	<string-array name="menu">
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+	</string-array>
+</resources>
